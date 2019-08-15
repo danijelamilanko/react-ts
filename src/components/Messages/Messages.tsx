@@ -4,10 +4,24 @@ import classes from './Messages.module.css';
 import Message from './Message/Message';
 
 interface IMessageProps {
-	messages: any;
+	_id: string;
+	createdAt: string;
+	body: string;
+	chat: string;
+	createdBy: {
+		_id: string,
+		email: string,
+		firstName: string,
+		lastName: string,
+		role: string
+	};
 }
 
-class Messages extends Component<IMessageProps> {
+interface IMessagesProps {
+	messages: IMessageProps[];
+}
+
+class Messages extends Component<IMessagesProps> {
 	private messagesRef: React.RefObject<HTMLInputElement>;
 	
     constructor(props) {
@@ -29,9 +43,7 @@ class Messages extends Component<IMessageProps> {
                 {this.props.messages.map(message => (
                     <Message
                         key={message._id}
-                        userName={message.createdBy.firstName}
-                        createdAt={message.createdAt}
-                        {...message}
+                        message={message}
                     />
                 ))}
             </div>

@@ -16,14 +16,14 @@ const message = (props) => {
         <div className={classes.MessagesImg}>
             <div className={userClasses.join(' ')}>
                 <div className={classes.Image}>
-                    <img src={image} alt="John Doe"/>
+                    <img src={image} alt={props.message.createdBy.firstName}/>
                 </div>
                 <div className={classes.Text}>
                     <div className={classes.Heading}>
-                        <a href={props.link}>{props.userName}</a>
-                        <span className={classes.Date}>{props.createdAt}</span>
+                        <a href={props.link}>{props.message.createdBy.firstName}</a>
+                        <span className={classes.Date}>{props.message.createdAt}</span>
                     </div>
-                    {props.body}
+                    {props.message.body}
                 </div>
             </div>
         </div>

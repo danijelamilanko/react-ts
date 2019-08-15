@@ -7,7 +7,7 @@ import Button from "../../components/UI/Button/Button";
 import SocketContext from '../../socket-context';
 
 interface IMessageInputProps {
-	activeChatId: any;
+	activeChatId: string;
 	socket: any;
 	messageSend: any;
 }
@@ -85,7 +85,7 @@ class MessageInput extends Component<IMessageInputProps, IMessageInputState> {
             </form>
         );
     };
-};
+}
 
 const MessageInputWithSocket = (props) => (
     <SocketContext.Consumer>
