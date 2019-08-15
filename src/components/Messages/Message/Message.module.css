@@ -1,0 +1,104 @@
+.Item {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.Item .Text {
+    background: #FFF;
+    padding: 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #D5D5D5;
+}
+.Item .Text .Heading {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.Item .Text .Heading a {
+    Text-decoration: none;
+    font-size: 12px;
+    color: #33414e;
+    font-weight: 600;
+    line-height: 20px;
+}
+.Item .Text .Heading .Date {
+    float: right;
+    line-height: 20px;
+    font-size: 11px;
+    color: #CCC;
+    font-weight: 600;
+}
+.Item .Text:hover {
+    border-color: #BBB;
+}
+.Item:nth-child(2n) .Text {
+    background: #F6F6F6;
+}
+.MessagesImg .Item .Image {
+    float: left;
+    width: 40px;
+}
+.MessagesImg .Item .Image img {
+    border: 2px solid #F5F5F5;
+    border-radius: 50%;
+    width: 40px;
+}
+.MessagesImg .Item .Text {
+    margin-left: 50px;
+    position: relative;
+}
+.MessagesImg .Item .Text:after,
+.MessagesImg .Item .Text:before {
+    right: 100%;
+    top: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.MessagesImg .Item .Text:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #FFF;
+    border-width: 5px;
+    margin-top: -5px;
+}
+.MessagesImg .Item .Text:before {
+    border-color: rgba(213, 213, 213, 0);
+    border-right-color: #D5D5D5;
+    border-width: 6px;
+    margin-top: -6px;
+}
+.MessagesImg .Item .Text:hover:before {
+    border-right-color: #BBB;
+}
+.MessagesImg .Item.In .Image {
+    float: right;
+}
+.MessagesImg .Item.In .Text {
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.MessagesImg .Item.In .Text:after,
+.MessagesImg .Item.In .Text:before {
+    right: auto;
+    left: 100%;
+}
+.MessagesImg .Item.In .Text:after {
+    border-right-color: transparent;
+    border-left-color: #FFF;
+}
+.MessagesImg .Item.In .Text:before {
+    border-right-color: transparent;
+    border-left-color: #D5D5D5;
+}
+.MessagesImg .Item.In .Text:hover:before {
+    border-left-color: #BBB;
+}

@@ -1,0 +1,42 @@
+.Tab {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 5px;
+}
+
+.Tab a {
+    text-decoration: none;
+    padding: 13px 10px;
+    line-height: 20px;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    padding-right: 30px;
+
+    background-color: grey;
+    color: white;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.Tab span {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+}
+
+.Tab a:hover,
+.Tab a:active,
+.Tab a.active {
+    background-color: darkgrey;
+    border-bottom: 4px solid black;
+    color: white;
+}

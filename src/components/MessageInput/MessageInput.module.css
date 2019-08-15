@@ -1,0 +1,9 @@
+.MessageInput {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MessageInput label {
+    display: none;
+}

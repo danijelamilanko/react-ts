@@ -1,0 +1,20 @@
+.Chat {
+    display: flex;
+    width: 900px;
+    height: 100%;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.ChatMessages {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-right: 1px solid #eee;
+}
+
+.ChatUsers {
+    display: flex;
+    width: 200px;
+}

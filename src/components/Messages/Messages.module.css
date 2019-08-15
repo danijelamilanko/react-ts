@@ -1,0 +1,20 @@
+.Messages {
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.Messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Messages::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.Messages::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

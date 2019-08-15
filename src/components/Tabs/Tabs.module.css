@@ -1,0 +1,9 @@
+.Tabs {
+    margin: 0;
+    list-style: none;
+    height: 50px;
+    background: #F5F5F5;
+    padding: 10px 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
